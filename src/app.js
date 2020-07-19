@@ -15,9 +15,9 @@ const Product = require('./models/product')
 const Customer = require('./models/customer')
 const Order = require('./models/order')
 //Carrega as rotas
-const indexRoute = require('./routes/index-route')
+const indexRoute = require('./routes/index-routes')
 const productRoute = require('./routes/product-route')
-const customerRoute = require('./routes/customer-route')
+const customerRoute = require('./routes/customer-routes')
 const orderRoute = require('./routes/order-routes')
 
 app.use(bodyParser.json())
