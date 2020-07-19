@@ -2,11 +2,13 @@
 
 const express = require('express')
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const config = require('./config')
 const app = express();
 const router = express.Router()
+
 //Conecta ao banco
-mongoose.connect('mongodb+srv://admin:wiMI7C6p12YEt57H@cluster0.jivpl.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true,  useUnifiedTopology: true })
+mongoose.connect(config.connectionString, { useNewUrlParser: true,  useUnifiedTopology: true })
 
 //Carrega os Models
 const Product = require('./models/product')
