@@ -33,7 +33,7 @@ const schema = new Schema({
         type: String,
         required: true
     }]
-
+    //TODO: Upload de imagem na AWS
 });
 
 module.exports = mongoose.model('Product', schema)
